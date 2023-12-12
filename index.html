@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Guide</title>
+    <!-- Include the Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.9"></script>
+
+    <style>
+        /* Smooth scrolling behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Jumbotron -->
+    <section class="bg-cover bg-fixed h-screen flex items-center justify-center relative"
+        style="background-image: url('https://www.islampos.com/wp-content/uploads/2018/02/kota-bima.jpg');">
+        <div class="absolute inset-0 bg-black opacity-25"></div>
+        <div class="text-white text-center relative z-10">
+            <h1 class="text-4xl font-bold mb-4">Explore Our Town</h1>
+            <p class="text-lg">Discover amazing souvenir shops, rental services, and tourist attractions.</p>
+        </div>
+
+        <div class="absolute bottom-12">
+            <a href="#menu" class="bg-blue-700 opacity-85 text-white px-4 py-2 rounded-full">
+                Learn More
+            </a>
+        </div>
+    </section>
+    <!-- Navbar -->
+    <!-- <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto">
+            <a href="#" class="text-white font-bold">Home</a>
+        </div>
+    </nav> -->
+
+    <!-- Homepage -->
+    <section id="menu" class="container mx-auto mt-8 pt-8 min-h-screen">
+        <h2 class="text-3xl font-bold mb-4">Menu</h2>
+
+        <!-- Menu Cards with smooth scrolling -->
+        <div class="flex justify-center content-center">
+            <a href="#souvenir" class="max-w-xs mx-2 cursor-pointer" hx-select="#souvenir" hx-trigger="click">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="souvenir.jpg" alt="Souvenir Shop" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Souvenir Shop</h3>
+                    <p class="text-gray-700">Explore our unique souvenirs.</p>
+                </div>
+            </a>
+
+            <a href="#rental" class="max-w-xs mx-2 cursor-pointer" hx-select="#rental" hx-trigger="click">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="rental.jpg" alt="Rental Shop" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Rental Shop</h3>
+                    <p class="text-gray-700">Rent a vehicle for your adventure.</p>
+                </div>
+            </a>
+
+            <a href="#attraction" class="max-w-xs mx-2 cursor-pointer" hx-select="#attraction" hx-trigger="click">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="attraction.jpg" alt="Tourist Attraction" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Tourist Attraction</h3>
+                    <p class="text-gray-700">Discover amazing places to visit.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Placeholder sections for Souvenir, Rental, and Attraction content -->
+    <!-- <div hx-target="#souvenir"></div>
+    <div hx-target="#rental"></div>
+    <div hx-target="#attraction"></div> -->
+
+    <!-- Souvenir Page -->
+    <section id="souvenir" class="container mx-auto mt-8 pt-8 min-h-screen" hx-trigger="none">
+        <h2 class="text-3xl font-bold mb-4">Souvenir Shops</h2>
+
+        <!-- Souvenir Shop Section -->
+        <div class="max-w-full mx-4">
+            <h3 class="text-2xl font-semibold mb-2">Shop Name</h3>
+
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar pages for Rental and Tourist Attraction -->
+    <section id="rental" class="container mx-auto mt-8 pt-8 min-h-screen" hx-trigger="none">
+        <h2 class="text-3xl font-bold mb-4">Rental Shops</h2>
+
+        <!-- Souvenir Shop Section -->
+        <div class="max-w-full mx-4">
+            <h3 class="text-2xl font-semibold mb-2">Shop Name</h3>
+
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                    <p class="text-gray-600 mt-2">Price: $10</p>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="attraction" class="container mx-auto mt-8 pt-8 min-h-screen" hx-trigger="none">
+        <h2 class="text-3xl font-bold mb-4">Tourist Attraction</h2>
+
+        <!-- Souvenir Shop Section -->
+        <div class="max-w-full mx-4">
+            <h3 class="text-2xl font-semibold mb-2">Facilites</h3>
+
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Facility 1</h3>
+                    <p class="text-gray-700">Short description of the product.</p>
+                </div>
+                <!-- Add more product cards here -->
+            </div>
+        </div>
+    </section>
+
+    <div id="back-to-top" class="hidden fixed transition-all ease-in-out duration-300 bottom-6 cursor-pointer p-4 right-4 z-10">
+        <a href="#menu" class="bg-blue-500 text-white px-4 py-2 rounded-full">
+            Back to Top
+        </a>
+    </div>
+
+    <script>
+        document.addEventListener("scroll", function () {
+            var backToTopButton = document.getElementById("back-to-top");
+            // console.log(document.documentElement.scrollTop)
+            if (document.body.scrollTop > 780 || document.documentElement.scrollTop > 780) {
+                backToTopButton.classList.remove("hidden");
+                backToTopButton.classList.add("block");
+            } else {
+                backToTopButton.classList.remove("block");
+                backToTopButton.classList.add("hidden");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
