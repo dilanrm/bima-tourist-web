@@ -7,6 +7,9 @@
     <title>Tourism Guide</title>
     <!-- Include the Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/htmx.org@1.9.9"></script>
 
     <style>
@@ -53,8 +56,10 @@
                         <img src="https://i.pinimg.com/564x/86/e6/0b/86e60b5ba0bb8ba05e5f32e5e6d3d9b9.jpg"
                             alt="Souvenir Shop" class="w-full h-48 object-cover mb-4 rounded">
                         <div class="absolute inset-0"></div>
-                        <div class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
-                            <h3 class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
+                        <div
+                            class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
+                            <h3
+                                class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
                                 Souvenir Shop
                             </h3>
                         </div>
@@ -66,11 +71,13 @@
             <a href="#rental" class="max-w-xs mx-2 cursor-pointer" hx-select="#rental" hx-trigger="click">
                 <div class="bg-white p-4 rounded-lg shadow-lg">
                     <div class="relative">
-                        <img src="https://cdn-icons-png.flaticon.com/512/2389/2389246.png"
-                            alt="Souvenir Shop" class="w-full h-48 object-cover mb-4 rounded">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2389/2389246.png" alt="Souvenir Shop"
+                            class="w-full h-48 object-cover mb-4 rounded">
                         <div class="absolute inset-0"></div>
-                        <div class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
-                            <h3 class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
+                        <div
+                            class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
+                            <h3
+                                class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
                                 Rental Shop
                             </h3>
                         </div>
@@ -85,8 +92,10 @@
                         <img src="https://i.pinimg.com/564x/0e/79/f8/0e79f81133f179277bcc01e2d44a25cd.jpg"
                             alt="Souvenir Shop" class="w-full h-48 object-cover mb-4 rounded">
                         <div class="absolute inset-0"></div>
-                        <div class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
-                            <h3 class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
+                        <div
+                            class="transition ease-in-out delay-100 absolute inset-0 flex items-center justify-center hover:bg-black hover:bg-opacity-70">
+                            <h3
+                                class="text-xl font-semibold hover:text-gray-200 bg-black bg-opacity-20 text-white text-center p-2 rounded">
                                 Tourist Attraction
                             </h3>
                         </div>
@@ -108,19 +117,42 @@
 
         <!-- Souvenir Shop Section -->
         <div class="max-w-full mx-4">
-            <h3 class="text-2xl font-semibold mb-2">Shop Name</h3>
+            <h3 class="text-2xl font-semibold mb-2">LA Nina Oleh Oleh Khas Bima</h3>
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                Bakso Lumayan, Jalan Soekarno Hatta Depan SMA 1 ,gang Rabangodu Utara, Kec. Raba, Kab. Bima, Nusa
+                Tenggara
+                Bar. 84113
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 0852-3858-0074</p>
 
             <!-- Product Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-4">
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold mb-2">Product 1</h3>
-                    <p class="text-gray-700">Short description of the product.</p>
-                    <p class="text-gray-600 mt-2">Price: $10</p>
+                    <img src="assets/images/seaweed.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Kerupuk Rumput Laut</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                    <p class="text-gray-600 mt-2">Price: Rp. 20,000</p>
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/Kelor.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Rangingan Daun Kelor</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                    <p class="text-gray-600 mt-2">Price: Rp. 25,000</p>
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/ikan.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Abon Ikan Tuna (Manis)</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                    <p class="text-gray-600 mt-2">Price: Rp. 40,000</p>
                 </div>
                 <!-- Add more product cards here -->
             </div>
-        </div>
     </section>
 
     <!-- Similar pages for Rental and Tourist Attraction -->
@@ -130,41 +162,50 @@
         <!-- Souvenir Shop Section -->
         <div class="max-w-full mx-4">
             <h3 class="text-2xl font-semibold mb-2">Mulyarentcar</h3>
+            <p><i class="fa-solid fa-location-dot"></i> BTN. Penatoi, Bima, Indonesia, West Nusa Tenggara</p>
+            <p><i class="fa-solid fa-phone"></i> 0852-5396-0151</p>
+            <p><i class="fa-solid fa-at"></i> mulyadinwoha@gmail.com</p>
 
             <!-- Product Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-4">
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/avanza_black.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/avanza_black.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4  transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Toyota Avanza Black</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: Rp. 300,000/day</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/avanza_silver.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/avanza_silver.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Toyota Avanza Silver</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: Rp. 330,000/day</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/avanza_white.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/avanza_white.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Toyota Avanza White</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: Rp. 350,000/day</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/avanza_red_wine.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/avanza_red_wine.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Toyota Avanza Redwine</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: 310,000/day</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/scroopy_red.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/scroopy_red.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Scoopy red</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: Rp. 170,000/day</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="assets/images/suzuki.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
+                    <img src="assets/images/suzuki.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
                     <h3 class="text-xl font-semibold mb-2">Suzuki 1992</h3>
                     <!-- <p class="text-gray-700">Short description of the product.</p> -->
                     <p class="text-gray-600 mt-2">Price: Rp. 240,000/day</p>
@@ -179,18 +220,55 @@
 
         <!-- Souvenir Shop Section -->
         <div class="max-w-full mx-4">
-            <h3 class="text-2xl font-semibold mb-2">Facilites</h3>
+            <h3 class="text-2xl font-semibold mb-2">Pantai Lariti</h3>
+            <p><i class="fa-solid fa-location-dot"></i> Desa Soro Lambu, Bima, Nusa Tenggara Barat 84183, Indonesia</p>
+            <p><i class="fa-solid fa-phone"></i> 0823-3903-7800</p>
 
             <!-- Product Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 mt-4">
                 <div class="bg-white p-4 rounded-lg shadow-lg">
-                    <img src="product1.jpg" alt="Product 1" class="w-full h-32 object-cover mb-4 rounded">
-                    <h3 class="text-xl font-semibold mb-2">Facility 1</h3>
-                    <p class="text-gray-700">Short description of the product.</p>
+                    <img src="assets/images/bridge.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Natural Bridge</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/boat.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Rental Boat</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/swinging.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Beach Swinging</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/toilet.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Clean Restroom</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/tower.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Watch Tower</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
+                </div>
+                <!-- Add more product cards here -->
+                <div class="bg-white p-4 rounded-lg shadow-lg">
+                    <img src="assets/images/house.jpg" alt="Product 1"
+                        class="w-full h-32 object-cover mb-4 transition-transform transform hover:scale-125 rounded">
+                    <h3 class="text-xl font-semibold mb-2">Rental House</h3>
+                    <!-- <p class="text-gray-700">Short description of the product.</p> -->
                 </div>
                 <!-- Add more product cards here -->
             </div>
-        </div>
     </section>
 
     <div id="back-to-top"
